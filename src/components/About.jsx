@@ -1,23 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
 import about from "../../assets/profile.png";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
-  const socialLinks = [
-    {
-      icon: FaGithub,
-      label: "Github",
-      color: "hover:text-pink-500 hover:border-pink-500/400",
-      url: "https://github.com/ahmedraza484/",
-    },
-    {
-      icon: FaLinkedin,
-      label: "Linkedin",
-      color: "hover:text-pink-500 hover:border-pink-500/400",
-      url: "https://www.linkedin.com/in/ahmedrazajpg/",
-    },
-  ];
   return (
     <section
       id="about"
@@ -50,24 +35,6 @@ const About = () => {
             seeking an internship where I can gain hands-on experience and grow
             as a developer.
           </p>
-          <div className="flex gap-4 mb-8">
-            {socialLinks.map((social, index) => {
-              const IconComponent = social.icon;
-              return (
-                <a
-                  href={social.url}
-                  target="_blank"
-                  key={index}
-                  aria-label={social.label}
-                  data-aos="zoom-in"
-                  data-aos-delay={index * 100}
-                  className={`w-12 h-12 rounded-full flex items-center justify-center text-xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm dark:text-gray-300 text-gray-700 transition-all duration-300 hover:scale-110 hover:shadow-lg ${social.color}`}
-                >
-                  <IconComponent />
-                </a>
-              );
-            })}
-          </div>
           <div>
             <a href="#contact" dat-aos="fade-up" data-aos-delay="300">
               <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-red-600 to-red-800 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105 cursor-pointer">

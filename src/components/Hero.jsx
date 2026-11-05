@@ -1,10 +1,24 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import hero from "../../assets/profile.png";
 import CV from "../../assets/frontend_ahmedraza.pdf";
 import { DownloadIcon, ExternalLink, Mail } from "lucide-react";
 
 const Hero = () => {
+  const socialLinks = [
+    {
+      icon: FaGithub,
+      label: "Github",
+      color: "hover:text-pink-500 hover:border-pink-500/400",
+      url: "https://github.com/ahmedraza484/",
+    },
+    {
+      icon: FaLinkedin,
+      label: "Linkedin",
+      color: "hover:text-pink-500 hover:border-pink-500/400",
+      url: "https://www.linkedin.com/in/ahmedrazajpg/",
+    },
+  ];
   return (
     <section
       id="home"
@@ -52,13 +66,31 @@ const Hero = () => {
               CSS, JavaScript, and React skills to real-world projects while
               learning and growing through an internship opportunity.
             </p>
+            <div className="flex gap-4 mb-8">
+              {socialLinks.map((social, index) => {
+                const IconComponent = social.icon;
+                return (
+                  <a
+                    href={social.url}
+                    target="_blank"
+                    key={index}
+                    aria-label={social.label}
+                    data-aos="zoom-in"
+                    data-aos-delay={index * 100}
+                    className={`w-12 h-12 rounded-full flex items-center justify-center text-xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm dark:text-gray-300 text-gray-700 transition-all duration-300 hover:scale-110 hover:shadow-lg ${social.color}`}
+                  >
+                    <IconComponent />
+                  </a>
+                );
+              })}
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a href={CV} download className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-red-600 to-red-800 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105 cursor-pointer">
                   <DownloadIcon size={18} /> Download CV
                 </button>
               </a>
-              <a href={CV} target="_blank"  className="w-full sm:w-auto">
+              <a href={CV} target="_blank" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border-2 dark:border-red-500 border-red-600 dark:text-white text-gray-800 hover:text-white dark:hover:text-white font-semibold dark:hover:bg-red-500 hover:bg-red-600 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105 cursor-pointer">
                   <ExternalLink size={20} /> View Resume
                 </button>
