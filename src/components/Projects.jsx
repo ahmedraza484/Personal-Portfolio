@@ -4,12 +4,28 @@ import { FaGithub } from "react-icons/fa";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
+import project4 from "../../assets/project4.png";
 
 const Projects = () => {
   const scrollRef = useRef(null);
   const projectsData = [
     {
       id: 1,
+      image: project4,
+      title: "Furnique Website",
+      desc: "This project was developed using React.js as part of my frontend development learning journey. I used online tutorials as learning references and utilized some assets and design resources from the original sources. The project helped me strengthen my understanding of React.js, component-based architecture, and frontend development.",
+      tags: [
+        "React.js",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Responsive Web Design",
+      ],
+      url: "https://github.com/ahmedraza484/furnique",
+      liveDemo: "https://furnique-psi.vercel.app/",
+    },
+    {
+      id: 2,
       image: project1,
       title: "Real State Website",
       desc: "This project was developed using React.js as part of my frontend development learning journey. I used online tutorials as learning references and utilized some assets and design resources from the original sources. The project helped me strengthen my understanding of React.js, component-based architecture, and frontend development.",
@@ -24,7 +40,7 @@ const Projects = () => {
       liveDemo: "https://real-state-nine-gamma.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       image: project2,
       title: "Edusity Webstie",
       desc: "This project was developed using React.js as part of my frontend development learning journey. I used online tutorials as learning references and utilized some assets and design resources from the original sources. The project helped me strengthen my understanding of React.js, component-based architecture, and frontend development.",
@@ -39,7 +55,7 @@ const Projects = () => {
       liveDemo: "https://edusity-seven-chi.vercel.app/",
     },
     {
-      id: 3,
+      id: 4,
       image: project3,
       title: "Foodie Website",
       desc: "This project was developed using React.js as part of my frontend development learning journey. I used online tutorials as learning references and utilized some assets and design resources from the original sources. The project helped me strengthen my understanding of React.js, component-based architecture, and frontend development.",
