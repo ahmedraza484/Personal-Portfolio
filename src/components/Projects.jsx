@@ -5,13 +5,32 @@ import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
 import project4 from "../../assets/project4.png";
+import project5 from "../../assets/project4.png";
 
 const Projects = () => {
   const scrollRef = useRef(null);
   const projectsData = [
     {
       id: 1,
-      image: project4,
+      image: project1,
+      title: "ShopHop – E-commerce Website",
+      desc: "A modern and responsive fashion e-commerce website built with React.js. ShopHop features a stylish landing page, product shopping experience, interactive Add to Cart functionality, and shopping cart management. Users can add products to their cart and view their selected items. The project focuses on creating a clean, user-friendly shopping experience with modern UI design and responsive layouts.",
+      tags: [
+        "React.js",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Responsive Web Design",
+        "Add to Cart",
+        "E-commerce",
+      ],
+      url: "https://github.com/ahmedraza484/Shophop",
+      liveDemo: "https://shophop-six.vercel.app/",
+    },
+
+    {
+      id: 2,
+      image: project2,
       title: "Furnique Website",
       desc: "This project was developed using React.js as part of my frontend development learning journey. I used online tutorials as learning references and utilized some assets and design resources from the original sources. The project helped me strengthen my understanding of React.js, component-based architecture, and frontend development.",
       tags: [
@@ -25,8 +44,23 @@ const Projects = () => {
       liveDemo: "https://furnique-psi.vercel.app/",
     },
     {
-      id: 2,
-      image: project1,
+      id: 3,
+      image: project3,
+      title: "Foodie Website",
+      desc: "This project was developed using React.js as part of my frontend development learning journey. I used online tutorials as learning references and utilized some assets and design resources from the original sources. The project helped me strengthen my understanding of React.js, component-based architecture, and frontend development.",
+      tags: [
+        "React.js",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Responsive Web Design",
+      ],
+      url: "https://github.com/ahmedraza484/Foodie",
+      liveDemo: "https://foodie-ten-lime.vercel.app/",
+    },
+    {
+      id: 4,
+      image: project4,
       title: "Real State Website",
       desc: "This project was developed using React.js as part of my frontend development learning journey. I used online tutorials as learning references and utilized some assets and design resources from the original sources. The project helped me strengthen my understanding of React.js, component-based architecture, and frontend development.",
       tags: [
@@ -40,8 +74,8 @@ const Projects = () => {
       liveDemo: "https://real-state-nine-gamma.vercel.app/",
     },
     {
-      id: 3,
-      image: project2,
+      id: 5,
+      image: project5,
       title: "Edusity Webstie",
       desc: "This project was developed using React.js as part of my frontend development learning journey. I used online tutorials as learning references and utilized some assets and design resources from the original sources. The project helped me strengthen my understanding of React.js, component-based architecture, and frontend development.",
       tags: [
@@ -53,21 +87,6 @@ const Projects = () => {
       ],
       url: "https://github.com/ahmedraza484/Edusity",
       liveDemo: "https://edusity-seven-chi.vercel.app/",
-    },
-    {
-      id: 4,
-      image: project3,
-      title: "Foodie Website",
-      desc: "This project was developed using React.js as part of my frontend development learning journey. I used online tutorials as learning references and utilized some assets and design resources from the original sources. The project helped me strengthen my understanding of React.js, component-based architecture, and frontend development.",
-      tags: [
-        "React.js",
-        "JavaScript (ES6+)",
-        "HTML5",
-        "CSS3",
-        "Responsive Web Design",
-      ],
-      url: "https://github.com/ahmedraza484/Foodie",
-      liveDemo: "https://foodie-ten-lime.vercel.app/",
     },
   ];
   const infiniteProjects = [...projectsData, ...projectsData, ...projectsData];
@@ -142,7 +161,7 @@ const Projects = () => {
                   <h3 className="text-lg font-bold mb-2 dark:text-white text-gray-900 group-hover:text-red-500 dark:group-hover:text-red-400 transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-xs leading-relaxed mb-4 dark:text-gray-400 text-gray-600 line-clamp-2">
+                  <p className="text-xs leading-relaxed mb-4 dark:text-gray-400 text-gray-600">
                     {project.desc}
                   </p>
                 </div>
