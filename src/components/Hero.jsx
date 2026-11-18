@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import hero from "../../assets/profile.png";
-import CV from "../../assets/frontend_ahmedraza.pdf";
+import CV from "../../assets/frontend-ahmedraza.pdf";
 import { DownloadIcon, ExternalLink, Mail } from "lucide-react";
 
 const Hero = () => {
