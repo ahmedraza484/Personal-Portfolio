@@ -15,18 +15,20 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   const navItems = [
     { name: "Home", link: "#home", icon: FaHome },
-    { name: "About", link: "#about", icon: FaUser },
-    { name: "Skills", link: "#skills", icon: FaCode },
-    {
-      name: "Certificates",
-      link: "#certificates",
-      icon: FaCertificate,
-    },
     {
       name: "Projects",
       link: "#projects",
       icon: FaProjectDiagram,
     },
+    { name: "Skills", link: "#skills", icon: FaCode },
+    { name: "About", link: "#about", icon: FaUser },
+    
+    {
+      name: "Certificates",
+      link: "#certificates",
+      icon: FaCertificate,
+    },
+    
     { name: "Contact", link: "#contact", icon: FaEnvelope },
   ];
 

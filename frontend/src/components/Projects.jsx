@@ -1,11 +1,11 @@
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { FaGithub } from "react-icons/fa";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
 import project4 from "../../assets/project4.png";
-import project5 from "../../assets/project4.png";
+import project5 from "../../assets/project5.png";
 
 const Projects = () => {
   const scrollRef = useRef(null);
@@ -13,7 +13,7 @@ const Projects = () => {
     {
       id: 1,
       image: project1,
-      title: "ShopHop – E-commerce Website",
+      title: "ShopHop E-Commerce Website",
       desc: "A modern and responsive fashion e-commerce website built with React.js. ShopHop features a stylish landing page, product shopping experience, interactive Add to Cart functionality, and shopping cart management. Users can add products to their cart and view their selected items. The project focuses on creating a clean, user-friendly shopping experience with modern UI design and responsive layouts.",
       tags: [
         "React.js",
